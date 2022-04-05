@@ -16,7 +16,7 @@ In this reinforcement learning task, the agent is a double-jointed arm that is r
 
 - `33` continuous-valued states corresponding to the position, rotation, velocity, and angular velocity of the arm.
 - `4` continuous-valued actions corresponding to the torques applied to the two joints that fall in the range `[-1, 1]`.
-- A reward of `0.1` for each time step that the agent has its hand in the target location, and a reward of `0` otherwise.
+- A reward of `0.04` for each time step that the agent has its hand in the target location, and a reward of `0` otherwise.
 
 The agent’s goal is to achieve an average score of `30` over a window of 100 episodes.
 

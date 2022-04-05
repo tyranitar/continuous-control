@@ -70,8 +70,8 @@ class ControllerD4PG():
 
     def step(self, transitions):
         # NOTE: Shape rewards to improve convergence. This
-        # will shift rewards from {0, 0.1} to {-0.1, 0}.
-        transitions["rewards"] -= 0.1
+        # will shift rewards from {0, 0.04} to {-0.1, 0}.
+        transitions["rewards"] = transitions["rewards"] * 2.5 - 0.1
 
         exp_tuples = self.convert_to_exp_tuples(transitions)
         self.trajectories.append(exp_tuples)
